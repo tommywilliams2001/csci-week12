@@ -58,4 +58,10 @@ def Intersection(list1, list2):
             list.append(name)
     return list
 
+def Notin(list1, list2):
+    list = []
+    for name in list1:
+        if name not in list2:
+            list.append(name)
+    return list
 

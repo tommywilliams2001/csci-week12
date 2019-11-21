@@ -34,3 +34,15 @@ def FindWordCount(list, string):
             if no_punct == string:
                 word_count += 1
     return word_count
+
+def ScoreFinder(players, scores, name):
+    index = 'x'
+    for i, item in enumerate(players):
+        print(players[i])
+        if item.lower() == name.lower():
+            index = i
+    if index == 'x':
+        print('OUTPUT player not found')
+    else:
+        print('OUTPUT {} got a score of {}'.format(name, scores[index]))
+

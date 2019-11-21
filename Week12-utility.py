@@ -20,6 +20,17 @@ def UpdateString(string1, string2, index):
         list.append(char)
     list[index] = string2
     string = ''.join(list)
-    print(string)
+    print('OUTPUT', string)
 
-
+def FindWordCount(list, string):
+    punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+    word_count = 0
+    for line in list:
+        for word in line.split():
+            no_punct = ''
+            for char in word:
+                if char not in punctuations:
+                    no_punct = no_punct + char
+            if no_punct == string:
+                word_count += 1
+    return word_count

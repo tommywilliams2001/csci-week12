@@ -1,7 +1,7 @@
-#   YOUR GITHUB REPO
+#   https://github.com/tommywilliams2001/csci-week12.git
 #   Tommy Williams
 #  ​CSCI 102 – Section E
-#   Week 12 - Part A
+#   Week 12 - Part B
 
 def PrintOutput(string):
     print('OUTPUT', string)

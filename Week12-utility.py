@@ -51,3 +51,11 @@ def Union(list1, list2):
     list4 = list(dict.fromkeys(list3))
     return list4
 
+def Intersection(list1, list2):
+    list = []
+    for name in list1:
+        if name in list2:
+            list.append(name)
+    return list
+
+

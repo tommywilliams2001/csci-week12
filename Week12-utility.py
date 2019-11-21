@@ -14,4 +14,12 @@ def LoadFile(file):
             list.append(line.rstrip('\n'))
     return list
 
-print(LoadFile('./text.txt'))
+def UpdateString(string1, string2, index):
+    list = []
+    for char in string1:
+        list.append(char)
+    list[index] = string2
+    string = ''.join(list)
+    print(string)
+
+

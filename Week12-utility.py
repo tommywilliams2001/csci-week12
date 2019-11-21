@@ -46,3 +46,8 @@ def ScoreFinder(players, scores, name):
     else:
         print('OUTPUT {} got a score of {}'.format(name, scores[index]))
 
+def Union(list1, list2):
+    list3 = list1 + list2
+    list4 = list(dict.fromkeys(list3))
+    return list4
+
